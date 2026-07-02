@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Fig and Fern Software Studio social sharing card</title>
+  <desc id="desc">A branded social sharing image with botanical shapes, the Fig and Fern name, and a software studio tagline.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10281f"/>
+      <stop offset="52%" stop-color="#214235"/>
+      <stop offset="100%" stop-color="#526e4a"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dce6d6"/>
+      <stop offset="100%" stop-color="#a7be99"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f4efe4" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#f4efe4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0c1d17" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="#f7f3ea" opacity="0.05"/>
+
+  <circle cx="965" cy="128" r="156" fill="url(#glow)" opacity="0.44"/>
+  <circle cx="1110" cy="560" r="190" fill="#f4efe4" opacity="0.08"/>
+  <circle cx="84" cy="80" r="120" fill="#f4efe4" opacity="0.06"/>
+
+  <g opacity="0.16">
+    <path d="M0 482C140 415 238 414 368 465C503 518 609 523 770 449C914 383 1028 385 1200 452V630H0Z" fill="#f7f3ea"/>
+    <path d="M0 542C142 487 299 493 441 551C610 620 834 611 1200 498V630H0Z" fill="#dce6d6"/>
+  </g>
+
+  <g transform="translate(776 108)" filter="url(#shadow)">
+    <path d="M146 0C228 47 258 148 232 245C198 370 72 444 0 414C29 340 55 274 69 208C88 118 98 65 146 0Z" fill="url(#leaf)"/>
+    <path d="M84 42C150 102 175 183 162 292" fill="none" stroke="#173128" stroke-opacity="0.38" stroke-width="6" stroke-linecap="round"/>
+    <path d="M111 124C143 136 162 155 182 189" fill="none" stroke="#173128" stroke-opacity="0.24" stroke-width="4" stroke-linecap="round"/>
+    <path d="M94 190C128 204 147 224 160 251" fill="none" stroke="#173128" stroke-opacity="0.24" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(876 314)" opacity="0.92">
+    <ellipse cx="80" cy="62" rx="80" ry="62" fill="#6f8f63"/>
+    <ellipse cx="80" cy="62" rx="52" ry="40" fill="#8fad7f"/>
+    <rect x="72" y="118" width="16" height="110" rx="8" fill="#d8b17b"/>
+    <path d="M80 132C72 108 58 91 34 80" fill="none" stroke="#d8b17b" stroke-width="8" stroke-linecap="round"/>
+    <path d="M80 146C94 116 121 95 154 83" fill="none" stroke="#d8b17b" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(88 88)">
+    <rect x="0" y="0" width="602" height="454" rx="34" fill="#f7f3ea" opacity="0.95"/>
+    <rect x="32" y="32" width="538" height="390" rx="24" fill="#173128" opacity="0.08"/>
+
+    <text x="54" y="96" fill="#24493d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="4">BOUTIQUE PRODUCT DESIGN + DEVELOPMENT STUDIO</text>
+    <text x="54" y="194" fill="#173128" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700">Fig and Fern</text>
+    <text x="54" y="258" fill="#173128" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="600">Software Studio</text>
+
+    <text x="54" y="330" fill="#4e5c55" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="400">Software that feels rooted, refined,</text>
+    <text x="54" y="372" fill="#4e5c55" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="400">and ready to grow.</text>
+
+    <rect x="54" y="404" width="292" height="54" rx="27" fill="#214235"/>
+    <text x="82" y="439" fill="#f7f3ea" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Custom websites, apps, and portals</text>
+  </g>
+</svg>
