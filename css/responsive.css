@@ -1,0 +1,112 @@
+@media (max-width: 1199px) {
+  .hero-metrics,
+  .process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .story-grid {
+    margin-top: 34px;
+  }
+}
+
+@media (max-width: 991px) {
+  nav {
+    padding: 16px 0;
+  }
+
+  .nav-menu {
+    display: none;
+    float: none;
+    width: 100%;
+    margin-top: 24px;
+    padding: 20px 0 0;
+    border-top: 1px solid rgba(36, 73, 61, 0.12);
+  }
+
+  .nav-menu li {
+    float: none;
+    margin: 0;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .responsive {
+    display: block;
+    float: right;
+    padding-top: 4px;
+    cursor: pointer;
+  }
+
+  .paddsection {
+    padding: 90px 0;
+  }
+
+  #header .header-content {
+    padding-top: 140px;
+  }
+
+  .story-card {
+    margin-bottom: 30px;
+  }
+
+  .contact-copy {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-content h1 {
+    font-size: 3.4rem;
+  }
+
+  .hero-lead {
+    font-size: 1rem;
+  }
+
+  .hero-metrics,
+  .story-grid,
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .story-card,
+  .story-panel,
+  .service-card,
+  .pricing-card,
+  .contact-form-card,
+  .testimonial-shell {
+    padding: 26px;
+  }
+
+  .featured-plan {
+    transform: none;
+  }
+
+  .section-title {
+    margin-bottom: 44px;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo a {
+    font-size: 1.75rem;
+  }
+
+  .header-content h1 {
+    font-size: 2.9rem;
+  }
+
+  .contact-form-card {
+    padding: 22px;
+  }
+}
