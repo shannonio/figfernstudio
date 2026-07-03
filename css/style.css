@@ -124,10 +124,18 @@ nav {
   width: 100%;
   z-index: 1000;
   padding: 18px 0;
-  display: none;
+  display: block;
   background: rgba(248, 246, 244, 1);
   backdrop-filter: blur(14px);
   box-shadow: 0 12px 40px rgba(18, 34, 28, 0.08);
+}
+
+nav,
+nav *,
+#main-nav,
+#main-nav * {
+  animation: none !important;
+  transition: none !important;
 }
 
 nav .container {
@@ -220,7 +228,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 110px 0 60px;
+  padding: 200px 0 60px;
   max-width: 760px;
 }
 
