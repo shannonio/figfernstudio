@@ -69,7 +69,6 @@
 
 -----------------------------------------------------------------------*/
 
-
 /*---------------------------------------------------------------------*/
 /*  1. GLOBAL STYLES
 /*  1.1 GENERAL STYLES
@@ -82,13 +81,12 @@ html {
 
 body {
   background-color: #0d0c0d;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #ffffff;
   line-height: 25px;
   overflow-x: hidden;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  1.2. TEXT COLOR
@@ -100,7 +98,6 @@ body {
 .colored-text {
   color: #c80a48;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  1.3. ANCHOR
@@ -121,7 +118,6 @@ a:focus {
   text-decoration: none;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  1.4. HEADING
 /*---------------------------------------------------------------------*/
@@ -132,9 +128,8 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  2. COMPONENTS
@@ -142,7 +137,7 @@ h6 {
 /*---------------------------------------------------------------------*/
 .btn.btn-custom {
   background-color: #c80a48;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -188,7 +183,6 @@ h6 {
   line-height: 52px;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  2.2. DIVIDER
 /*---------------------------------------------------------------------*/
@@ -205,11 +199,11 @@ span.divider.center {
   margin-left: auto;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  2.3. SELECT BOXES CUSTOM
 /*---------------------------------------------------------------------*/
-.select2-container--default .select2-selection--single.select2-container-custom {
+.select2-container--default
+  .select2-selection--single.select2-container-custom {
   background-color: #0d0c0d;
   height: 46px;
   padding: 8px;
@@ -217,19 +211,27 @@ span.divider.center {
   border-radius: 0px;
 }
 
-.select2-container--default .select2-selection--single.select2-container-custom:focus {
+.select2-container--default
+  .select2-selection--single.select2-container-custom:focus {
   outline: none;
 }
 
-.select2-container--default .select2-selection--single.select2-container-custom .select2-selection__rendered {
+.select2-container--default
+  .select2-selection--single.select2-container-custom
+  .select2-selection__rendered {
   color: #a1a1a1;
 }
 
-.select2-container--default .select2-selection--single.select2-container-custom .select2-selection__arrow {
+.select2-container--default
+  .select2-selection--single.select2-container-custom
+  .select2-selection__arrow {
   height: 46px;
 }
 
-.select2-container--default .select2-selection--single.select2-container-custom .select2-selection__arrow b {
+.select2-container--default
+  .select2-selection--single.select2-container-custom
+  .select2-selection__arrow
+  b {
   border-color: #3b3b3b transparent transparent transparent;
   border-width: 8px 6px 0 6px;
   margin-left: -12px;
@@ -246,24 +248,35 @@ span.divider.center {
   max-height: 400px;
 }
 
-.select2-dropdown-custom .select2-results > .select2-results__options > .select2-results__option {
+.select2-dropdown-custom
+  .select2-results
+  > .select2-results__options
+  > .select2-results__option {
   padding: 8px 15px;
   color: #a1a1a1;
 }
 
-.select2-dropdown-custom .select2-results > .select2-results__options > .select2-results__option:hover {
+.select2-dropdown-custom
+  .select2-results
+  > .select2-results__options
+  > .select2-results__option:hover {
   background-color: #212121;
 }
 
-.select2-dropdown-custom .select2-results > .select2-results__options > .select2-results__option--highlighted[aria-selected] {
+.select2-dropdown-custom
+  .select2-results
+  > .select2-results__options
+  > .select2-results__option--highlighted[aria-selected] {
   background-color: #212121;
 }
 
-.select2-dropdown-custom .select2-results > .select2-results__options > .select2-results__option[aria-selected=true] {
+.select2-dropdown-custom
+  .select2-results
+  > .select2-results__options
+  > .select2-results__option[aria-selected="true"] {
   background-color: #c80a48;
   color: #ffffff;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  2.4. RADIO BUTTON CUSTOM
@@ -287,7 +300,7 @@ span.divider.center {
 
 .form-group .radio > label:before {
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   left: 0;
   width: 18px;
@@ -297,21 +310,20 @@ span.divider.center {
   border-radius: 50%;
 }
 
-.form-group .radio input[type=radio] {
+.form-group .radio input[type="radio"] {
   position: absolute;
   visibility: hidden;
 }
 
-.form-group .radio input[type=radio]:checked + label:before {
-  content: '\f00c';
-  font-family: 'FontAwesome';
+.form-group .radio input[type="radio"]:checked + label:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
   font-weight: 400;
   font-size: 10px;
   color: #555555;
   text-align: center;
   line-height: 16px;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  2.5. CHECKBOX CUSTOM
@@ -335,7 +347,7 @@ span.divider.center {
 
 .form-group .checkbox > label:before {
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   left: 0;
   width: 18px;
@@ -345,21 +357,20 @@ span.divider.center {
   border-radius: 1px;
 }
 
-.form-group .checkbox input[type=checkbox] {
+.form-group .checkbox input[type="checkbox"] {
   position: absolute;
   visibility: hidden;
 }
 
-.form-group .checkbox input[type=checkbox]:checked + label:before {
-  content: '\f00c';
-  font-family: 'FontAwesome';
+.form-group .checkbox input[type="checkbox"]:checked + label:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
   font-weight: 400;
   font-size: 10px;
   color: #555555;
   text-align: center;
   line-height: 16px;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  3. PRELOADER
@@ -377,7 +388,6 @@ span.divider.center {
   background-color: #c80a48;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  4. HOME
 /*---------------------------------------------------------------------*/
@@ -387,7 +397,7 @@ header.hero {
   z-index: 5;
   width: 100%;
   height: 100%;
-  background-image: url('../images/me-headshot.jpg');
+  background-image: url("../images/laptopforest.jpg");
   background-repeat: no-repeat;
   background-position: center -200px;
   -webkit-background-size: cover;
@@ -410,7 +420,7 @@ header.hero {
 
 header.hero:before {
   position: absolute;
-  content: '';
+  content: "";
   z-index: 10;
   width: 100%;
   height: 100%;
@@ -422,7 +432,7 @@ header.hero .pattern-overlay {
   z-index: 15;
   width: 100%;
   height: 100%;
-  background-image: url('../images/bg-pattern.png');
+  background-image: url("../images/bg-pattern.png");
   background-repeat: repeat;
 }
 
@@ -501,7 +511,7 @@ header.hero .hero-body .hero-text h1.small > span.blinker:before {
   position: absolute;
   top: 50%;
   left: 8px;
-  content: '';
+  content: "";
   width: 2px;
   height: 30px;
   margin-top: -15px;
@@ -546,14 +556,12 @@ header.hero .hero-body .hero-text .page-scroll {
   margin-top: 40px;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  4.1. TEXT SLIDER
 /*---------------------------------------------------------------------*/
 #text-slider .carousel-inner {
   padding-bottom: 3px;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  4.2. SLIDESHOW
@@ -563,7 +571,6 @@ header.hero .hero-body .hero-text .page-scroll {
     background: transparent;
   }
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  4.3. PARALLAX
@@ -582,7 +589,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   display: table;
   width: 100%;
   height: 100%;
-  background-image: url('../images/bg-hero.jpg');
+  background-image: url("../images/bg-hero.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   -webkit-background-size: cover;
@@ -597,46 +604,44 @@ header.hero.parallax-yes > .parallax > .bcg {
   }
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  4.4. BLINKER
 /*---------------------------------------------------------------------*/
 @-moz-keyframes blinker {
   0% {
-    opacity: 1.0;
+    opacity: 1;
   }
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
   100% {
-    opacity: 1.0;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes blinker {
   0% {
-    opacity: 1.0;
+    opacity: 1;
   }
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
   100% {
-    opacity: 1.0;
+    opacity: 1;
   }
 }
 
 @keyframes blinker {
   0% {
-    opacity: 1.0;
+    opacity: 1;
   }
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
   100% {
-    opacity: 1.0;
+    opacity: 1;
   }
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  5. NAVIGATION
@@ -660,7 +665,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .navbar.navbar-fixed-top .navbar-brand {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 28px;
   font-weight: 700;
   color: #a1a1a1;
@@ -676,7 +681,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   padding-top: 0px;
   height: 40px;
   line-height: 40px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #a1a1a1;
@@ -754,7 +759,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 .navbar.navbar-fixed-top .navbar-nav .dropdown-menu > li a {
   height: 35px;
   line-height: 35px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #a1a1a1;
@@ -808,7 +813,6 @@ header.hero.parallax-yes > .parallax > .bcg {
   }
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  5.1. NAVIGATION - CENTER MENU
 /*---------------------------------------------------------------------*/
@@ -825,7 +829,6 @@ header.hero.parallax-yes > .parallax > .bcg {
     display: inline-block;
   }
 }
-
 
 /*---------------------------------------------------------------------*/
 /* 6. SECTION
@@ -897,9 +900,11 @@ header.hero.parallax-yes > .parallax > .bcg {
   }
 }
 
-.section.bg-image-yes .container-fluid.section-wrapper > .section-content:before {
+.section.bg-image-yes
+  .container-fluid.section-wrapper
+  > .section-content:before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -959,16 +964,17 @@ header.hero.parallax-yes > .parallax > .bcg {
   }
 }
 
-.section.parallax-yes .container-fluid.section-wrapper > .section-content:before {
+.section.parallax-yes
+  .container-fluid.section-wrapper
+  > .section-content:before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  6.1. SECTION - PROFILE
@@ -982,7 +988,6 @@ header.hero.parallax-yes > .parallax > .bcg {
     padding: 0px;
   }
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  6.1.1. PROFILE TEXT
@@ -1024,7 +1029,6 @@ header.hero.parallax-yes > .parallax > .bcg {
     padding-left: 20px;
   }
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  6.1.2. CONTACT DETAILS
@@ -1091,7 +1095,6 @@ header.hero.parallax-yes > .parallax > .bcg {
   }
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.1.3. PROFILE PICTURE
 /*---------------------------------------------------------------------*/
@@ -1126,7 +1129,6 @@ header.hero.parallax-yes > .parallax > .bcg {
   letter-spacing: 2px;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.2. SECTION - PORTFOLIO
 /*---------------------------------------------------------------------*/
@@ -1158,7 +1160,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 .portfolio .item > .project-wrapper:before {
   position: absolute;
   z-index: 10;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -1254,7 +1256,6 @@ header.hero.parallax-yes > .parallax > .bcg {
   }
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.2.1. MAGNIFIC POP UP CUSTOM
 /*---------------------------------------------------------------------*/
@@ -1287,8 +1288,8 @@ button.mfp-arrow:active {
   height: 60px;
   line-height: 20px;
   margin-top: -30px;
-  content: '\ea26';
-  font-family: 'icomoon';
+  content: "\ea26";
+  font-family: "icomoon";
   font-size: 50px;
 }
 
@@ -1307,15 +1308,14 @@ button.mfp-arrow:active {
   height: 60px;
   line-height: 20px;
   margin-top: -30px;
-  content: '\ebf9';
-  font-family: 'icomoon';
+  content: "\ebf9";
+  font-family: "icomoon";
   font-size: 50px;
 }
 
 .mfp-arrow-right:after {
   border-left: none;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  6.2.2. MAGNIFIC POP CUSTOM - FADE EFFECT
@@ -1350,7 +1350,6 @@ button.mfp-arrow:active {
   opacity: 0;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.3. SECTION - SERVICES
 /*---------------------------------------------------------------------*/
@@ -1377,7 +1376,7 @@ button.mfp-arrow:active {
 @media (min-width: 768px) {
   .services .item:after {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     right: 0;
     width: 1px;
@@ -1434,7 +1433,7 @@ button.mfp-arrow:active {
 @media (min-width: 768px) {
   .services .item.top:before {
     position: absolute;
-    content: '';
+    content: "";
     bottom: 0;
     left: 0;
     width: 100%;
@@ -1455,12 +1454,11 @@ button.mfp-arrow:active {
   }
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.4. SECTION - STRENGTHS
 /*---------------------------------------------------------------------*/
 #strengths {
-  background-image: url('../images/rock.jpg');
+  background-image: url("../images/rock.jpg");
   background-position: center top;
 }
 
@@ -1473,7 +1471,7 @@ button.mfp-arrow:active {
 }
 
 #strengths.parallax-yes > .parallax > .bcg {
-  background-image: url('../images/rock.jpg');
+  background-image: url("../images/rock.jpg");
 }
 
 .column-chart {
@@ -1519,7 +1517,7 @@ button.mfp-arrow:active {
 .column-chart:before,
 .column-chart:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: calc(100% + 30px);
@@ -1608,7 +1606,7 @@ button.mfp-arrow:active {
 .column-chart > .chart > .item:before {
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   bottom: 0;
   left: 50%;
   width: 1px;
@@ -1676,7 +1674,6 @@ button.mfp-arrow:active {
   }
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.5. SECTION - RESUME
 /*---------------------------------------------------------------------*/
@@ -1721,7 +1718,7 @@ button.mfp-arrow:active {
 @media (min-width: 768px) {
   .panel-group.resume .resume-item:before {
     position: absolute;
-    content: '';
+    content: "";
     width: 1px;
     height: calc(100% + 20px);
     top: 0;
@@ -1794,7 +1791,7 @@ button.mfp-arrow:active {
   display: block;
   position: absolute;
   z-index: 15;
-  content: '-';
+  content: "-";
   top: 0;
   left: 0;
   width: 40px;
@@ -1807,7 +1804,7 @@ button.mfp-arrow:active {
 }
 
 .panel-group.resume .resume-item .resume-btn > a.collapsed:before {
-  content: '+';
+  content: "+";
 }
 
 .panel-group.resume .resume-item .panel {
@@ -1855,12 +1852,11 @@ button.mfp-arrow:active {
   margin-bottom: 0px;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.6. SECTION - REFERENCES
 /*---------------------------------------------------------------------*/
 #references {
-  background-image: url('../images/peejay.jpg');
+  background-image: url("../images/peejay.jpg");
 }
 
 #references .section-wrapper > .section-content {
@@ -1893,7 +1889,7 @@ button.mfp-arrow:active {
 #references .flexslider.references > .slides > .item .profile:before {
   display: block;
   position: absolute;
-  content: '\ec98';
+  content: "\ec98";
   bottom: 0;
   left: 0;
   width: 45px;
@@ -1901,7 +1897,7 @@ button.mfp-arrow:active {
   line-height: 47px;
   margin-bottom: -8px;
   background-color: #c80a48;
-  font-family: 'icomoon';
+  font-family: "icomoon";
   font-size: 18px;
   text-align: center;
   -webkit-box-shadow: 3px 3px 10px #0d0c0d;
@@ -1966,19 +1962,31 @@ button.mfp-arrow:active {
   bottom: -60px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li {
+#references
+  .flexslider.references
+  .flexslider-controls
+  > .flex-control-nav
+  > li {
   position: relative;
   margin: 0 3px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li:hover {
+#references
+  .flexslider.references
+  .flexslider-controls
+  > .flex-control-nav
+  > li:hover {
   cursor: pointer;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li:before {
+#references
+  .flexslider.references
+  .flexslider-controls
+  > .flex-control-nav
+  > li:before {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 40px;
@@ -1988,13 +1996,22 @@ button.mfp-arrow:active {
   opacity: 0.7;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li > img {
+#references
+  .flexslider.references
+  .flexslider-controls
+  > .flex-control-nav
+  > li
+  > img {
   width: 40px;
   height: 40px;
   border-radius: 3px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li.flex-active:before {
+#references
+  .flexslider.references
+  .flexslider-controls
+  > .flex-control-nav
+  > li.flex-active:before {
   opacity: 0.2;
 }
 
@@ -2023,7 +2040,11 @@ button.mfp-arrow:active {
   font-size: 35px;
 }
 
-#references .flexslider.references > .flex-direction-nav-custom > li > a.flex-prev {
+#references
+  .flexslider.references
+  > .flex-direction-nav-custom
+  > li
+  > a.flex-prev {
   padding-right: 20px;
 }
 
@@ -2032,9 +2053,8 @@ button.mfp-arrow:active {
 }
 
 #references.parallax-yes > .parallax > .bcg {
-  background-image: url('../images/peejay.jpg');
+  background-image: url("../images/peejay.jpg");
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  6.7. SECTION - SKILLS
@@ -2125,7 +2145,6 @@ button.mfp-arrow:active {
   letter-spacing: 1px;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.8. SECTION - KNOWLEDGE
 /*---------------------------------------------------------------------*/
@@ -2202,7 +2221,6 @@ button.mfp-arrow:active {
   box-shadow: 3px 3px 10px #0d0c0d;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.9. SECTION - ACCOLADES
 /*---------------------------------------------------------------------*/
@@ -2231,7 +2249,7 @@ button.mfp-arrow:active {
 .accolades > .item:before {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 30px;
   width: 1px;
@@ -2277,7 +2295,6 @@ button.mfp-arrow:active {
 .accolades > .item > .content p {
   font-size: 18px;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  6.10. SECTION - MILESTONES
@@ -2350,7 +2367,6 @@ button.mfp-arrow:active {
   font-weight: 700;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.11. SECTION - WORK PROCESS
 /*---------------------------------------------------------------------*/
@@ -2405,7 +2421,7 @@ button.mfp-arrow:active {
   .work-process .item:before {
     position: absolute;
     z-index: 10;
-    content: '';
+    content: "";
     bottom: 0;
     left: 0;
     width: 1px;
@@ -2432,7 +2448,7 @@ button.mfp-arrow:active {
 .work-process .item .inner-content:before {
   position: absolute;
   z-index: 10;
-  content: '';
+  content: "";
   top: 50%;
   left: 0;
   width: 100%;
@@ -2443,7 +2459,7 @@ button.mfp-arrow:active {
 .work-process .item .inner-content:after {
   position: absolute;
   z-index: 10;
-  content: '';
+  content: "";
   top: 50%;
   right: 0;
   width: 1px;
@@ -2497,7 +2513,7 @@ button.mfp-arrow:active {
 .work-process .item .inner-content > span.dot {
   position: absolute;
   z-index: 15;
-  content: '';
+  content: "";
   top: 50%;
   left: 0;
   width: 8px;
@@ -2595,14 +2611,12 @@ button.mfp-arrow:active {
   }
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.12. SECTION - CONTACT
 /*---------------------------------------------------------------------*/
 #contact {
   background-color: #0d0c0d;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  6.12.1. CONTACT FORM
@@ -2711,7 +2725,6 @@ button.mfp-arrow:active {
   box-shadow: none;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  6.12.2. CONTACT DETAILS
 /*---------------------------------------------------------------------*/
@@ -2760,7 +2773,6 @@ button.mfp-arrow:active {
   width: 60px;
   height: 4px;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  6.13. SECTION - BLOG
@@ -2832,7 +2844,6 @@ button.mfp-arrow:active {
   color: #eeeeee;
 }
 
-
 /*---------------------------------------------------------------------*/
 /*  7. MAP
 /*---------------------------------------------------------------------*/
@@ -2859,7 +2870,6 @@ button.mfp-arrow:active {
   width: 100%;
   height: 400px;
 }
-
 
 /*---------------------------------------------------------------------*/
 /*  8. FOOTER
