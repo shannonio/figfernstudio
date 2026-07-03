@@ -125,7 +125,7 @@ nav {
   z-index: 1000;
   padding: 18px 0;
   display: none;
-  background: rgba(247, 243, 234, 0.92);
+  background: rgb(247 246 246);
   backdrop-filter: blur(14px);
   box-shadow: 0 12px 40px rgba(18, 34, 28, 0.08);
 }
