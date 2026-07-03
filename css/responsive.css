@@ -11,29 +11,39 @@
 
 @media (max-width: 991px) {
   nav {
-    padding: 16px 0;
+    padding: 12px 0;
+  }
+
+  .logo a {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
   }
 
   .nav-menu {
     display: none;
     float: none;
     width: 100%;
-    margin-top: 24px;
-    padding: 20px 0 0;
+    margin-top: 18px;
+    padding: 16px 0 6px;
     border-top: 1px solid rgba(36, 73, 61, 0.12);
   }
 
   .nav-menu li {
     float: none;
     margin: 0;
-    text-align: center;
-    padding: 12px 0;
+    text-align: left;
+    padding: 0;
+  }
+
+  .nav-menu li a {
+    padding: 14px 6px;
+    font-size: 1rem;
   }
 
   .responsive {
-    display: block;
+    display: inline-flex;
     float: right;
-    padding-top: 4px;
     cursor: pointer;
   }
 
@@ -99,7 +109,13 @@
 
 @media (max-width: 575px) {
   .logo a {
-    font-size: 1.75rem;
+    font-size: 1.55rem;
+  }
+
+  .responsive {
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
   }
 
   .header-content h1 {

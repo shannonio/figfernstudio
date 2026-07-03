@@ -152,6 +152,7 @@ nav ul li {
 }
 
 nav ul li a {
+  display: block;
   color: var(--forest-soft);
   font-size: 0.96rem;
   font-weight: 700;
@@ -159,8 +160,15 @@ nav ul li a {
 
 .responsive {
   display: none;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   font-size: 1.7rem;
   color: var(--forest);
+  background: rgba(220, 230, 214, 0.55);
+  border: 1px solid rgba(36, 73, 61, 0.12);
 }
 
 .active {
