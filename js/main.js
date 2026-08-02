@@ -5,7 +5,8 @@ $(document).ready(function() {
   $(document).on('scroll', onScroll);
 
   $('a[href^="#"]').on('click', function(e) {
-    var target = $(this.hash);
+    var hash = this.hash;
+    var target = $(hash);
 
     if (!target.length) {
       return;
@@ -24,7 +25,7 @@ $(document).ready(function() {
     $('html, body').stop().animate({
       scrollTop: target.offset().top - 80
     }, 500, 'swing', function() {
-      window.location.hash = target.selector;
+      window.location.hash = hash;
       $(document).on('scroll', onScroll);
     });
   });
