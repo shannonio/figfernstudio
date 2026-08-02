@@ -521,6 +521,13 @@
               <input type="hidden" name="_subject" value="New inquiry from Fig and Fern website" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
+              <input
+                type="text"
+                name="_honey"
+                style="display: none"
+                tabindex="-1"
+                autocomplete="off"
+              />
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -628,10 +635,24 @@
       </div>
     </footer>
 
+    <div id="toast" class="toast" role="status" aria-live="polite">
+      <div class="toast-icon">&#10003;</div>
+      <div class="toast-body">
+        <p class="toast-title">Message sent</p>
+        <p class="toast-message" id="toast-message">
+          Thanks for reaching out — we will get back to you soon.
+        </p>
+      </div>
+      <button type="button" class="toast-close" id="toast-close" aria-label="Dismiss">
+        &times;
+      </button>
+    </div>
+
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/jquery/jquery-migrate.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/typed/typed.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
   </body>
 </html>
