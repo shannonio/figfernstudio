@@ -7,25 +7,30 @@
   var buttonLabel = button ? button.textContent : "";
 
   var toast = document.getElementById("toast");
+  var toastOverlay = document.getElementById("toast-overlay");
   var toastMessage = document.getElementById("toast-message");
   var toastClose = document.getElementById("toast-close");
-  var toastTimer;
+  var toastConfirm = document.getElementById("toast-confirm");
 
   function showToast(message) {
     if (!toast) return;
     if (toastMessage) toastMessage.textContent = message;
     toast.classList.add("is-visible");
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(hideToast, 6000);
+    if (toastOverlay) toastOverlay.classList.add("is-visible");
   }
 
   function hideToast() {
     if (!toast) return;
     toast.classList.remove("is-visible");
-    clearTimeout(toastTimer);
+    if (toastOverlay) toastOverlay.classList.remove("is-visible");
   }
 
   if (toastClose) toastClose.addEventListener("click", hideToast);
+  if (toastConfirm) toastConfirm.addEventListener("click", hideToast);
+  if (toastOverlay) toastOverlay.addEventListener("click", hideToast);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") hideToast();
+  });
 
   var ajaxUrl = form.getAttribute("action").replace(
     "formsubmit.co/",

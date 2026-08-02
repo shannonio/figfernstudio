@@ -637,79 +637,104 @@ textarea.form-control {
   cursor: pointer;
 }
 
+.toast-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: rgba(17, 33, 27, 0.55);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.toast-overlay.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .toast {
   position: fixed;
-  right: 24px;
-  bottom: 24px;
+  top: 50%;
+  left: 50%;
   z-index: 9999;
   display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  max-width: 360px;
-  padding: 20px 22px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  width: 92%;
+  max-width: 440px;
+  padding: 44px 36px 36px;
   background: var(--white);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow);
-  border-left: 4px solid var(--fern);
-  transform: translateY(20px);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 30px 80px rgba(17, 33, 27, 0.35);
+  border-top: 6px solid var(--fern);
+  transform: translate(-50%, -50%) scale(0.9);
   opacity: 0;
   pointer-events: none;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .toast.is-visible {
-  transform: translateY(0);
+  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   pointer-events: auto;
 }
 
 .toast-icon {
   flex-shrink: 0;
-  width: 28px;
-  height: 28px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   background: var(--fern);
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 30px;
   font-weight: 700;
+  margin-bottom: 14px;
 }
 
 .toast-body {
-  flex: 1;
+  width: 100%;
 }
 
 .toast-title {
   color: var(--forest);
-  font-weight: 700;
-  margin-bottom: 4px;
+  font-weight: 800;
+  font-size: 1.35rem;
+  margin-bottom: 10px;
 }
 
 .toast-message {
-  font-size: 0.92rem;
+  font-size: 1.02rem;
   color: var(--copy);
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+.toast-confirm {
+  margin-top: 26px;
+  width: 100%;
 }
 
 .toast-close {
-  flex-shrink: 0;
+  position: absolute;
+  top: 16px;
+  right: 20px;
   background: none;
   border: none;
   color: var(--copy);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1;
   cursor: pointer;
-  padding: 0;
+  padding: 4px;
 }
 
 @media (max-width: 480px) {
   .toast {
-    right: 16px;
-    left: 16px;
-    bottom: 16px;
-    max-width: none;
+    padding: 36px 24px 28px;
   }
 }
 
