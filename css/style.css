@@ -540,6 +540,11 @@ nav ul li a {
   box-shadow: 0 0 0 5px rgba(111, 143, 99, 0.16);
 }
 
+.plan-cta {
+  width: 100%;
+  text-align: center;
+}
+
 .testimonial-section {
   padding-top: 30px;
 }
@@ -744,6 +749,43 @@ textarea.form-control {
   .toast {
     padding: 36px 24px 28px;
   }
+}
+
+.toast--form {
+  align-items: stretch;
+  text-align: left;
+  gap: 0;
+}
+
+.toast--form .toast-title {
+  padding-right: 24px;
+}
+
+.toast--wide {
+  max-width: 560px;
+}
+
+.plan-form {
+  margin-top: 18px;
+}
+
+.plan-form .form-group {
+  margin-bottom: 18px;
+}
+
+.plan-form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.plan-form-actions .btn {
+  flex: 1;
+  min-width: 140px;
+}
+
+.plan-form .form-note {
+  min-height: 1.4em;
 }
 
 #footer {

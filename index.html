@@ -422,9 +422,9 @@
                 <li>Social profile starter guidance</li>
                 <li>Launch support</li>
               </ul>
-              <a href="#contact" class="btn btn-secondary smoothScroll"
-                >Ask about Sprout</a
-              >
+              <button type="button" class="btn btn-primary plan-cta" data-plan="Sprout">
+                Choose Sprout
+              </button>
             </div>
           </div>
 
@@ -443,9 +443,9 @@
                 <li>Social profile polish and brand alignment</li>
                 <li>Basic analytics and SEO setup</li>
               </ul>
-              <a href="#contact" class="btn btn-primary smoothScroll"
-                >Book Canopy</a
-              >
+              <button type="button" class="btn btn-primary plan-cta" data-plan="Canopy">
+                Choose Canopy
+              </button>
             </div>
           </div>
 
@@ -463,9 +463,9 @@
                 <li>Custom application or workflow build</li>
                 <li>Post-launch support options</li>
               </ul>
-              <a href="#contact" class="btn btn-secondary smoothScroll"
-                >Plan Orchard</a
-              >
+              <button type="button" class="btn btn-primary plan-cta" data-plan="Orchard">
+                Choose Orchard
+              </button>
             </div>
           </div>
         </div>
@@ -669,11 +669,168 @@
       </button>
     </div>
 
+    <div
+      id="plan-email-modal"
+      class="toast toast--form"
+      role="dialog"
+      aria-labelledby="plan-email-title"
+    >
+      <button
+        type="button"
+        class="toast-close"
+        id="plan-email-close"
+        aria-label="Dismiss"
+      >
+        &times;
+      </button>
+      <p class="toast-title" id="plan-email-title">
+        Interested in <span id="plan-email-name">this plan</span>?
+      </p>
+      <p class="toast-message">
+        Drop your email and we'll follow up right away. You can add a few more
+        details next.
+      </p>
+      <form id="plan-email-form" class="plan-form">
+        <input type="hidden" name="plan" id="plan-email-plan-field" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Quick pricing lead from Fig and Fern website"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="text"
+          name="_honey"
+          style="display: none"
+          tabindex="-1"
+          autocomplete="off"
+        />
+        <div class="form-group">
+          <label for="plan-email-input" class="sr-only">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="plan-email-input"
+            name="email"
+            placeholder="you@company.com"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary plan-form-submit"
+          id="plan-email-submit"
+        >
+          Continue
+        </button>
+        <p class="form-note" id="plan-email-note"></p>
+      </form>
+    </div>
+
+    <div
+      id="plan-details-modal"
+      class="toast toast--form toast--wide"
+      role="dialog"
+      aria-labelledby="plan-details-title"
+    >
+      <button
+        type="button"
+        class="toast-close"
+        id="plan-details-close"
+        aria-label="Dismiss"
+      >
+        &times;
+      </button>
+      <p class="toast-title" id="plan-details-title">
+        Great — a few more details
+      </p>
+      <p class="toast-message">
+        This helps us prep for our first conversation. Skip it if you're
+        short on time — we already have your email.
+      </p>
+      <form id="plan-details-form" class="plan-form">
+        <input type="hidden" name="plan" id="plan-details-plan-field" />
+        <input type="hidden" name="email" id="plan-details-email-field" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New pricing inquiry from Fig and Fern website"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://figfernstudio.com/thank-you.html"
+        />
+        <input
+          type="text"
+          name="_honey"
+          style="display: none"
+          tabindex="-1"
+          autocomplete="off"
+        />
+        <div class="form-group">
+          <label for="plan-details-name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="plan-details-name"
+            name="name"
+            placeholder="Your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="plan-details-company">Company</label>
+          <input
+            type="text"
+            class="form-control"
+            id="plan-details-company"
+            name="company"
+            placeholder="Company or brand"
+          />
+        </div>
+        <div class="form-group">
+          <label for="plan-details-project">What do you need?</label>
+          <input
+            type="text"
+            class="form-control"
+            id="plan-details-project"
+            name="projectType"
+            placeholder="Website refresh, social media setup, content templates, portal, internal tool..."
+          />
+        </div>
+        <div class="form-group">
+          <label for="plan-details-message">Anything else?</label>
+          <textarea
+            class="form-control"
+            id="plan-details-message"
+            name="message"
+            rows="4"
+            placeholder="Tell us more about your goals."
+          ></textarea>
+        </div>
+        <div class="plan-form-actions">
+          <button
+            type="submit"
+            class="btn btn-primary plan-form-submit"
+            id="plan-details-submit"
+          >
+            Send details
+          </button>
+          <button type="button" class="btn btn-secondary" id="plan-details-skip">
+            Maybe later
+          </button>
+        </div>
+        <p class="form-note" id="plan-details-note"></p>
+      </form>
+    </div>
+
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/jquery/jquery-migrate.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/typed/typed.js"></script>
     <script src="js/main.js"></script>
     <script src="js/contact-form.js"></script>
+    <script src="js/pricing-modals.js"></script>
   </body>
 </html>
