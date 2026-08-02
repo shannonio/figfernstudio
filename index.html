@@ -534,6 +534,11 @@
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
               <input
+                type="hidden"
+                name="_next"
+                value="https://figfernstudio.com/thank-you.html"
+              />
+              <input
                 type="text"
                 name="_honey"
                 style="display: none"
@@ -652,11 +657,11 @@
       <button type="button" class="toast-close" id="toast-close" aria-label="Dismiss">
         &times;
       </button>
-      <div class="toast-icon">&#10003;</div>
+      <div class="toast-icon toast-icon-error">!</div>
       <div class="toast-body">
-        <p class="toast-title" id="toast-title">Message sent</p>
+        <p class="toast-title" id="toast-title">Something went wrong</p>
         <p class="toast-message" id="toast-message">
-          Thanks for reaching out — we will get back to you soon.
+          Please email hello@figfernstudio.com directly.
         </p>
       </div>
       <button type="button" class="btn btn-primary toast-confirm" id="toast-confirm">

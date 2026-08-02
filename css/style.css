@@ -673,7 +673,11 @@ textarea.form-control {
   transform: translate(-50%, -50%) scale(0.9);
   opacity: 0;
   pointer-events: none;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.toast.is-error {
+  border-top-color: #b5502f;
 }
 
 .toast.is-visible {
@@ -695,6 +699,10 @@ textarea.form-control {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 14px;
+}
+
+.toast-icon-error {
+  background: #b5502f;
 }
 
 .toast-body {

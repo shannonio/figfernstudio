@@ -12,10 +12,10 @@
   var toastClose = document.getElementById("toast-close");
   var toastConfirm = document.getElementById("toast-confirm");
 
-  function showToast(message) {
+  function showErrorToast(message) {
     if (!toast) return;
     if (toastMessage) toastMessage.textContent = message;
-    toast.classList.add("is-visible");
+    toast.classList.add("is-visible", "is-error");
     if (toastOverlay) toastOverlay.classList.add("is-visible");
   }
 
@@ -59,20 +59,14 @@
       })
       .then(function () {
         form.reset();
-        if (note) {
-          note.textContent =
-            "Thanks! Your message is on its way — we will get back to you soon.";
-        }
-        showToast("Thanks for reaching out — we will get back to you soon.");
+        window.location.href = "thank-you.html";
       })
       .catch(function () {
         if (note) {
           note.textContent =
             "Something went wrong sending that. Please email hello@figfernstudio.com directly.";
         }
-        showToast("Something went wrong. Please email hello@figfernstudio.com directly.");
-      })
-      .finally(function () {
+        showErrorToast("Something went wrong. Please email hello@figfernstudio.com directly.");
         if (button) {
           button.disabled = false;
           button.textContent = buttonLabel;
