@@ -59,7 +59,7 @@
         "url": "https://figfernstudio.com/",
         "image": "https://figfernstudio.com/images/title-logo.png",
         "description": "Web design, social media setup, local SEO, and custom software for small businesses in Sequim, Port Angeles, Port Townsend, and across Washington's Olympic Peninsula.",
-        "email": "hello@figandfern.studio",
+        "email": "hello@figfernstudio.com",
         "areaServed": [
           { "@type": "City", "name": "Sequim, Washington" },
           { "@type": "City", "name": "Port Angeles, Washington" },
@@ -399,7 +399,7 @@
           <div class="col-lg-4 col-md-6 mb-30">
             <div class="pricing-card">
               <p class="plan-name">Sprout</p>
-              <h3>$2,400</h3>
+              <h3>From $899</h3>
               <p class="plan-summary">
                 For new small businesses that need a credible online presence
                 quickly.
@@ -420,7 +420,7 @@
             <div class="pricing-card featured-plan">
               <p class="plan-badge">Most popular</p>
               <p class="plan-name">Canopy</p>
-              <h3>$5,800</h3>
+              <h3>From $2,200</h3>
               <p class="plan-summary">
                 For small businesses ready for a stronger brand presence, better
                 lead flow, and more consistency across channels.
@@ -440,7 +440,7 @@
           <div class="col-lg-4 col-md-6 mb-30">
             <div class="pricing-card">
               <p class="plan-name">Orchard</p>
-              <h3>From $9,500</h3>
+              <h3>From $4,200</h3>
               <p class="plan-summary">
                 For businesses that need a full digital ecosystem, from
                 marketing presence to custom systems.
@@ -512,7 +512,15 @@
           </div>
 
           <div class="col-lg-7">
-            <form id="contact-form" class="contact-form-card">
+            <form
+              id="contact-form"
+              class="contact-form-card"
+              action="https://formsubmit.co/hello@figfernstudio.com"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="New inquiry from Fig and Fern website" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -591,11 +599,10 @@
                 </div>
                 <div class="col-12">
                   <button type="submit" class="btn btn-primary btn-send">
-                    Create email draft
+                    Send message
                   </button>
                   <p id="form-note" class="form-note">
-                    No black hole here. This form opens your email app with the
-                    details already filled in.
+                    This sends your message straight to our inbox.
                   </p>
                 </div>
               </div>

@@ -61,33 +61,4 @@ $(document).ready(function() {
     });
   }
 
-  $('#contact-form').on('submit', function(e) {
-    e.preventDefault();
-
-    var name = $('#name').val().trim();
-    var email = $('#email').val().trim();
-    var company = $('#company').val().trim() || 'Not provided';
-    var budget = $('#budget').val();
-    var projectType = $('#projectType').val().trim() || 'Not specified';
-    var message = $('#message').val().trim();
-    var note = $('#form-note');
-
-    if (!name || !email || !message) {
-      note.text('Please fill out your name, email, and project details so we can create the draft.');
-      return;
-    }
-
-    var subject = encodeURIComponent('New inquiry from ' + name + ' via Fig and Fern Software Studio');
-    var body = encodeURIComponent(
-      'Name: ' + name + '\n' +
-      'Email: ' + email + '\n' +
-      'Company: ' + company + '\n' +
-      'Budget: ' + budget + '\n' +
-      'Project type: ' + projectType + '\n\n' +
-      'Project details:\n' + message
-    );
-
-    note.text('Your email draft is opening now.');
-    window.location.href = 'mailto:hello@figandfern.studio?subject=' + subject + '&body=' + body;
-  });
 });
