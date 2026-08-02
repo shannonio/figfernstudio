@@ -484,6 +484,12 @@ nav ul li a {
   padding: 34px 30px;
   border-radius: var(--radius-lg);
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-list {
+  flex-grow: 1;
 }
 
 .featured-plan {
